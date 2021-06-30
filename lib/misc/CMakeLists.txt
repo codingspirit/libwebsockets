@@ -110,6 +110,11 @@ if (LWS_WITH_LEJP)
 	list(APPEND SOURCES
 		misc/lejp.c)
 endif()
+if (LWS_WITH_LECP)
+	list(APPEND SOURCES
+		misc/lecp.c)
+endif()
+
 
 if (UNIX)
 	if (NOT LWS_HAVE_GETIFADDRS)
